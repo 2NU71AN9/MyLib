@@ -12,7 +12,8 @@
 		1284B19520EDBC4E00EE9E26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1284B19320EDBC4E00EE9E26 /* Main.storyboard */; };
 		1284B19720EDBC5000EE9E26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1284B19620EDBC5000EE9E26 /* Assets.xcassets */; };
 		1284B19A20EDBC5000EE9E26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1284B19820EDBC5000EE9E26 /* LaunchScreen.storyboard */; };
-		1284B1A220EDC9CE00EE9E26 /* SLViewControllerIntercepter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1284B1A120EDC9CE00EE9E26 /* SLViewControllerIntercepter.swift */; };
+		1284B1AF20EDFE9900EE9E26 /* SLViewControllerIntercepter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1284B1AE20EDFE9900EE9E26 /* SLViewControllerIntercepter.swift */; };
+		1284B1B120EDFEBC00EE9E26 /* ViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1284B1B020EDFEBB00EE9E26 /* ViewControllerProtocol.swift */; };
 		D42FF2735CB6A33C03DC06E9 /* Pods_AspectSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 879049BCEE71D28534E88BE0 /* Pods_AspectSwiftDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +25,8 @@
 		1284B19620EDBC5000EE9E26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1284B19920EDBC5000EE9E26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1284B19B20EDBC5000EE9E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1284B1A120EDC9CE00EE9E26 /* SLViewControllerIntercepter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLViewControllerIntercepter.swift; sourceTree = "<group>"; };
+		1284B1AE20EDFE9900EE9E26 /* SLViewControllerIntercepter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLViewControllerIntercepter.swift; sourceTree = "<group>"; };
+		1284B1B020EDFEBB00EE9E26 /* ViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerProtocol.swift; sourceTree = "<group>"; };
 		61933BD6F7395A7CCDFFF4BC /* Pods-AspectSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AspectSwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AspectSwiftDemo/Pods-AspectSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		879049BCEE71D28534E88BE0 /* Pods_AspectSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AspectSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE20808EFE4DDD2312B73050 /* Pods-AspectSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AspectSwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AspectSwiftDemo/Pods-AspectSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -63,7 +65,8 @@
 		1284B18E20EDBC4E00EE9E26 /* AspectSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
-				1284B1A120EDC9CE00EE9E26 /* SLViewControllerIntercepter.swift */,
+				1284B1B020EDFEBB00EE9E26 /* ViewControllerProtocol.swift */,
+				1284B1AE20EDFE9900EE9E26 /* SLViewControllerIntercepter.swift */,
 				1284B18F20EDBC4E00EE9E26 /* AppDelegate.swift */,
 				1284B19120EDBC4E00EE9E26 /* ViewController.swift */,
 				1284B19320EDBC4E00EE9E26 /* Main.storyboard */,
@@ -203,7 +206,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1284B1A220EDC9CE00EE9E26 /* SLViewControllerIntercepter.swift in Sources */,
+				1284B1B120EDFEBC00EE9E26 /* ViewControllerProtocol.swift in Sources */,
+				1284B1AF20EDFE9900EE9E26 /* SLViewControllerIntercepter.swift in Sources */,
 				1284B19220EDBC4E00EE9E26 /* ViewController.swift in Sources */,
 				1284B19020EDBC4E00EE9E26 /* AppDelegate.swift in Sources */,
 			);

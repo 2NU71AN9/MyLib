@@ -10,11 +10,12 @@ import Foundation
 import UIKit
 import Aspects
 
-class SLViewControllerIntercepter: NSObject {
-    static let shared = SLViewControllerIntercepter()
-    private override init() {
-        super.init()
+class SLViewControllerIntercepter: NSObject, ViewControllerProtocol {
 
+    static let shared = SLViewControllerIntercepter()
+    private override init() { super.init() }
+    
+    func intercepter() {
         loadViewIntercepter()
         viewDidLoadIntercepter()
         viewWillAppearIntercepter()
@@ -62,18 +63,21 @@ class SLViewControllerIntercepter: NSObject {
         }
     }
     
-    private func loadView(_ Controller: UIViewController) {
+    private func loadView(_ controller: UIViewController) {
+        if controller is UINavigationController || controller is UITabBarController { return }
         print("拦截loadView")
-        
+        loadView(controller: controller)
     }
     
-    private func viewDidLoad(_ Controller: UIViewController) {
+    private func viewDidLoad(_ controller: UIViewController) {
+        if controller is UINavigationController || controller is UITabBarController { return }
         print("拦截viewDidLoad")
-
+        viewDidLoad(controller: controller)
     }
     
-    private func viewWillAppear(_ Controller: UIViewController) {
+    private func viewWillAppear(_ controller: UIViewController) {
+        if controller is UINavigationController || controller is UITabBarController { return }
         print("拦截viewWillAppear")
-
+        viewWillAppear(controller: controller)
     }
 }

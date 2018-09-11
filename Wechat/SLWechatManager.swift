@@ -30,7 +30,23 @@ class SLWechatManager: NSObject {
         req.sign = model.sign
         WXApi.send(req)
     }
-    
+}
+
+extension SLWechatManager: WXApiDelegate {
+    func onResp(_ resp: BaseResp!) {
+        if resp.isKind(of: PayResp.self) {
+            switch resp.errCode {
+            case 0:
+                wechatPaySuccess()
+            default:
+                wechatPayFailure()
+            }
+        }
+    }
+}
+
+// MARK: - 支付结果处理
+extension SLWechatManager {
     /// 支付成功
     func wechatPaySuccess() {
         SVProgressHUD.show(UIImage(named: "paySuccess")!, status: "支付成功")
@@ -46,18 +62,5 @@ class SLWechatManager: NSObject {
         SVProgressHUD.show(UIImage(named: "payFailure")!, status: "支付失败,请重新支付")
         SVProgressHUD.setDefaultMaskType(.clear)
         SVProgressHUD.dismiss(withDelay: 2)
-    }
-}
-
-extension SLWechatManager: WXApiDelegate {
-    func onResp(_ resp: BaseResp!) {
-        if resp.isKind(of: PayResp.self) {
-            switch resp.errCode {
-            case 0:
-                wechatPaySuccess()
-            default:
-                wechatPayFailure()
-            }
-        }
     }
 }

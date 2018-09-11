@@ -1,0 +1,21 @@
+PODS:
+  - Alamofire (4.6.0)
+  - Kingfisher (4.6.1)
+  - Reveal-SDK (13)
+  - SnapKit (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Kingfisher
+  - Reveal-SDK
+  - SnapKit (~> 4.0.0)
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  Kingfisher: 1f9157d9c02b380cbd0b7cc890161195164eb634
+  Reveal-SDK: ccc2b0f8014965ea448b7534a7c2c8da232b75e8
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+
+PODFILE CHECKSUM: d07b3a194f528494479ec3846e1f2a1be432db4b
+
+COCOAPODS: 1.3.1

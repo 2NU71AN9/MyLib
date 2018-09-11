@@ -149,7 +149,7 @@ public extension String {
 }
 
 // MARK: - =============命名空间相关=============
-
+E
 public extension Bundle {
     /// 返回命名空间
     var namespace: String { return infoDictionary?["CFBundleName"] as? String ?? "" }
